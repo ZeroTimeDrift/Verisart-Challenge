@@ -13,10 +13,10 @@ import axios from "axios";
       getCertificates().then((result) => { setCertificates(result.data) });
     }, []);
 
-    useEffect(() => {
+    /* useEffect(() => { don't need this
       // called when the component is mounted and certificates is updated
       console.log("this is now the " + JSON.stringify(certificates));
-    }, [certificates]);
+    }, [certificates]); */
 
     return (
       <div className="bg-white">
